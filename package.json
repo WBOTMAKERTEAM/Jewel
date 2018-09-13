@@ -17,10 +17,5 @@
     "start": "node index.js"
   },
   "author": "Vap0r1ze",
-  "license": "MIT",
-  "optionalDependencies": {
-    "pug": "^2.0.3",
-    "sass": "^1.10.4",
-    "webshot": "^0.18.0"
-  }
+  "license": "MIT"
 }
