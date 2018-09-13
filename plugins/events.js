@@ -13,9 +13,9 @@ e.init = function (Bot) {
   for (let event of events) {
     let handlers = Bot.util.getFiles(`events/${event}`)
     h += handlers.length
-    Bot.on(event, function (...args) {
+    Bot.client.on(event, function (...args) {
       handlers.forEach(h => {
-        h(...args)
+        h.e.bind(Bot)(...args)
       })
     })
   }
