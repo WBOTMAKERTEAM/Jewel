@@ -13,5 +13,7 @@ module.exports = function (guild, member) {
       text: `${member.user.username}#${member.user.discriminator} (${member.id})`
     }
   }
-  welcomeChannel.createMessage({ embed })
+  setTimeout(() => {
+    welcomeChannel.createMessage({ embed })
+  }, 1000)  
 }
